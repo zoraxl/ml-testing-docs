@@ -1,15 +1,14 @@
-**********************
+***********
 Data Tests
-**********************
+***********
 
 Schema-based Data Validation
+============================
 
-=====
-
-.. _what-to-test:
+.. _what_to_test:
 
 What to test?
-------------
+-------------
 The schema based validation tests are designed to encapsulate the intuition of the data in a schema automatically. 
 Once the schema is setup, it is used as a baseline data model to test training  and serving data to prevent potential data drift / concept drift. 
 
@@ -17,8 +16,9 @@ Once the schema is setup, it is used as a baseline data model to test training  
 
    (.venv) $ pip install lumache
 
+.._how_to_test:
 How to test?
-----------------
+------------
 
 The schema should at least capture the following information:
 The schema should at least capture the following information:
