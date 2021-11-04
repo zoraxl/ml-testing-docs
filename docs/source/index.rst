@@ -15,4 +15,6 @@ Contents
 .. toctree::
 
    DataTests
+   ModelTests
+   InfrastructureTests
    api

@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'ML Testing'
+copyright = '2021, PwC'
+author = 'PwC Emerging Tech'
 
 release = '0.1'
 version = '0.1.0'
