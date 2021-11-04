@@ -5,7 +5,6 @@ Infrastructure Tests
 Reproducible Training
 =====================
 
-.. _what_to_test:
 
 What to test?
 -------------
@@ -17,7 +16,6 @@ Like all scientific experiments, we want our model experiments to yield the same
 - Environment (package dependencies, environment setup) Therefore, the reproducible tests would center around how to ensure the correct version of these components are used.
 
 
-.._how_to_test:
 
 How to test?
 ------------
@@ -27,14 +25,13 @@ To construct a test on the reproducibility, it would be as simple as checking th
 Version Model & Serving Specs
 =============================
 
-.. _what_to_test:
 
 What to test?
 -------------
 
 To differentiate this test with the test for versioned model & spec, this test would focus on unit-testing on small sample or synthetic data before serving Model API. This test is a smoke test to see if the model is deployed correctly with the right model and specs.
 
-.._how_to_test:
+
 
 How to test?
 ------------
@@ -46,7 +43,6 @@ Model Validation Pipeline Testing
 =================================
 
 
-.. _what_to_test:
 
 What to test?
 -------------
@@ -54,7 +50,7 @@ What to test?
 This test is designed for model pipeline check for debugging purposes. Usually this test would be automated by CI/CD integration with the model pipeline.
 
 
-.._how_to_test:
+
 
 How to test?
 ------------
@@ -64,7 +60,6 @@ This test would largely depends on how you design the pipeline. A simple pass to
 Model Quality Validation Testing
 ================================
 
-.. _what_to_test:
 
 What to test?
 -------------
@@ -72,7 +67,6 @@ What to test?
 In software development when engineers want to deploy new features, a standard practice is to canaried the new feature with incoming traffic and see how it performed against the old ones. We are borrowing a similar approach when designing model quality validation test where we are diverting a portion of the incoming data stream for inference on to the new model and compared that against the old model. This way we are able crisply compare how models are performed in terms of its prediction quality and provide insights to the model deployment decisions.
 
 
-.._how_to_test:
 
 How to test?
 ------------
@@ -82,14 +76,12 @@ Model quality validation is treated as a design guidance in the ML testing frame
 Roll-back Tests
 ===============
 
-.. _what_to_test:
 
 What to test?
 -------------
 
 The roll-back tests are used to ensure that there would always be a back-up model that is ready to go into production if any issues arise. It would provide a safety net for deployment to enhance the robustness of the ML system.
 
-.._how_to_test:
 
 How to test?
 ------------

@@ -5,7 +5,6 @@ Model (Validation) Tests
 Version-controlled Model & Specs
 ================================
 
-.. _what_to_test:
 
 What to test?
 -------------
@@ -13,7 +12,6 @@ What to test?
 This tests is an inspection of the modelOps system design to evaluate if the current system met capability to version-controlled model and specs. Ideally, the system is capable of tracking model experiments and allows for reproducibility in the future.
 
 
-.._how_to_test:
 
 How to test?
 ------------
@@ -27,14 +25,12 @@ This inspection provides answer to the following questions:
 Evaluation Tests
 ================
 
-.. _what_to_test:
 
 What to test?
 -------------
 
 The evaluation test is conducted that we regularly check our new model to a very simple baseline. The purpose of doing this is not only compare to see if the new model, usually with more sophisticated techniques, will perform better than the baseline, but also evaluate the trade-off to achieve this level of performance. Also, by having this test we can ensure the functionality of the larger model pipeline and debug if necessary.
 
-.._how_to_test:
 
 How to test?
 ------------

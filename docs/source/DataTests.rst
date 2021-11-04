@@ -5,7 +5,6 @@ Data Tests
 Schema-based Data Validation
 ============================
 
-.. _what_to_test:
 
 What to test?
 -------------
@@ -13,8 +12,6 @@ The schema based validation tests are designed to encapsulate the intuition of t
 Once the schema is setup, it is used as a baseline data model to test training  and serving data to prevent potential data drift / concept drift. 
 
 
-
-.._how_to_test:
 
 How to test?
 ------------
@@ -33,14 +30,12 @@ The process of generating the schema creation should be agnostic, which is porta
 Rule-based Feature Governance
 =============================
 
-.. _what_to_test:
 
 What to test?
 -------------
 
 Rule-based feature governance is the additional consideration when performing schema-based data validation. Data Scientist / Data Engineer would curate their automatically generated schema before using it as baseline.
 
-.._how_to_test:
 
 How to test?
 ------------
@@ -55,7 +50,7 @@ These new curated schema should be reflective of these considerations by imposin
 Feature and Transformation Testing
 ==================================
 
-.. _what_to_test:
+
 
 What to test?
 -------------
