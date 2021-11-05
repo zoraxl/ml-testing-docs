@@ -26,7 +26,6 @@ The process of generating the schema creation should be agnostic, which is porta
 
 .. figure:: images/schema_test.png
    :align: center
-
    Schema-based data validation workflow
 
 
