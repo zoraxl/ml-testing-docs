@@ -22,6 +22,11 @@ This inspection provides answer to the following questions:
 - Does the system has the capability to check and store the code?
 - Does the code undergo code review?
 
+.. figure:: docs/source/images/mlflow.png
+   :align: center
+   Mlflow workflow to control model experiments and specs
+
+
 Evaluation Tests
 ================
 
@@ -36,6 +41,9 @@ How to test?
 ------------
 
 To find such baseline, we recommend to have a simple model with few features. This test that will compare the metrics of baseline model and the new model to check if the new model will perform better than the baseline. In this way, baseline will act as a safety net for other models so that the performance can not go worse than the baseline.
+
+.. figure:: docs/source/images/baseline.png
+   :align: center
 
 
 Data Slicing
@@ -54,6 +62,8 @@ To construct a data slicing unit tests, we first need to identify the data slice
 - If we are combining the evaluation tests, we would then use the slice on both baseline and the current model and evaluate the metrics.
 - If we want to use standalone tests, we need to first using a predefined metrics to compare the slices performance. It can be an advanced model like xgboost that we want to check against and using the model performance to set standards for the data slicing tests.
 
+.. figure:: docs/source/images/data_slice.png
+   :align: center
 
 Single Batch Test
 =================
@@ -68,4 +78,5 @@ How to test?
 
 This tests may require additional dependencies & environment to call model package API to ensure the model code will function correctly. To construct such tests, a rule of thumb would be to check we are overfitting the training data. So in this case, we have a higher confidence to continue with the model code and proceed with the model development.
 
-
+.. figure:: docs/source/images/batch_test.png
+   :align: center

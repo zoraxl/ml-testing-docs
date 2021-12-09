@@ -38,6 +38,11 @@ How to test?
 
 This test came natural once we have inspection on the capability of versioned model and model specs. What we need to ensure is to construct a test that will have inference that met the expectation.
 
+.. figure:: docs/source/images/train_module.png
+   :align: center
+   A reproducible training module backed by Mlflow and Azure service
+
+
 
 Model Validation Pipeline Testing
 =================================
@@ -73,6 +78,10 @@ How to test?
 
 Model quality validation is treated as a design guidance in the ML testing framework were we scrutinize the process of modelOps and see if this idea is adopted.
 
+.. figure:: docs/source/images/canaried.png
+   :align: center
+   A canaried scenario for software deployment rollout
+
 Roll-back Tests
 ===============
 
@@ -92,6 +101,9 @@ There are several considerations when constructing the roll-back tests:
 - The process of reverting the deployment to the roll-back model should be seamless.
 - This process should also considered to be automated when given 'red flag' in the deployment: inference error, in correct prediction and etc.
 
+.. figure:: docs/source/images/roll_back.png
+   :align: center
+   The workflow to test rollback tests
 
 
 
