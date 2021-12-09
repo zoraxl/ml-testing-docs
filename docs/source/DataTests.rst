@@ -24,7 +24,7 @@ The schema should at least capture the following information:
 To perform schema-based validation, the basic logic for this tests would be only if the incoming training / serving data pass the test, we then will continue to pass the data to model training or making inference. 
 The process of generating the schema creation should be agnostic, which is portable to another platforms, either in local or in cloud.
 
-.. figure:: images/schema_test.png
+.. image:: images/schema_test.png
    :align: center
    Schema-based data validation workflow
 
