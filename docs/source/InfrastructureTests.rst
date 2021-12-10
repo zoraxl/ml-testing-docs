@@ -38,9 +38,9 @@ How to test?
 
 This test came natural once we have inspection on the capability of versioned model and model specs. What we need to ensure is to construct a test that will have inference that met the expectation.
 
-.. figure:: docs/source/images/train_module.png
-   :align: center
-   A reproducible training module backed by Mlflow and Azure service
+    .. figure:: docs/source/images/train_module.png
+        :align: center
+        A reproducible training module backed by Mlflow and Azure service
 
 
 
